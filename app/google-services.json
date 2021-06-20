@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "990220457707",
+    "project_id": "yemeksepeticlone",
+    "storage_bucket": "yemeksepeticlone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990220457707:android:e76c4726eab491f17c10ae",
+        "android_client_info": {
+          "package_name": "com.ytcexample.yemeksepeticlone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990220457707-bn12a9v8mt6p8e4ldrqm0ihelivgtbb2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI_VmaBnSSGxj_pbiCt1GXpOYNHYUpvms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990220457707-bn12a9v8mt6p8e4ldrqm0ihelivgtbb2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
