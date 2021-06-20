@@ -81,53 +81,7 @@ class RestaurantDetails : AppCompatActivity() , menuRecyclerAdapter.OnItemClickL
 
 
 
-        /*val infoMap = hashMapOf<String,Any>()
-        infoMap.put("exists",true)
-        infoMap.put("many" ,0)
-        infoMap.put("name","$food")
 
-        db.collection("Carts").document("$email").collection("List").whereEqualTo("name","$food").addSnapshotListener { snapshot, exception ->
-            if(exception != null){
-                Toast.makeText(applicationContext,exception.localizedMessage.toString(),Toast.LENGTH_LONG).show()
-            } else{
-                if (snapshot != null) {
-                    if(!snapshot.isEmpty){
-                        //val documents = snapshot.documents
-
-
-                    }
-                    else{
-                       db.collection("Carts").document("$email").collection("List").add("$infoMap")
-                    }
-                }
-            }
-        }
-
-
-
-        var documentid = ""
-
-
-        db.collection("Carts").document("$email").collection("List").whereEqualTo("name","$food").addSnapshotListener { snapshot, exception ->
-        if(exception != null){
-            Toast.makeText(applicationContext,exception.localizedMessage.toString(),Toast.LENGTH_LONG).show()
-        } else{
-            if (snapshot != null) {
-                if(!snapshot.isEmpty){
-                  val documents = snapshot.documents
-                    for(document in documents){
-                        val id = document.id
-                        documentid = id
-                        println("$documentid")
-
-                    }
-                }
-                else{
-
-                }
-            }
-        }
-    }*/
         db.collection("Carts").document("$email").collection("List").document("$food").update("many",FieldValue.increment(1))
         for(i in 1..price){
             db.collection("Carts").document("$email").collection("fee").document("fee").update("fee",FieldValue.increment(1))

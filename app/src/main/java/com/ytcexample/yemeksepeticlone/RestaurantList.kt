@@ -66,6 +66,7 @@ class RestaurantList : AppCompatActivity(), listRecyclerAdapter.OnItemClickListe
         db.collection("Carts").document("$email").collection("currRestaurant").document("res").set(resMap)
 
         startActivity(intent)
+        finish()
 
     }
 }
